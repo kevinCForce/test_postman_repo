@@ -2274,7 +2274,77 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"name": "consulta exitosa SV",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n\t\"Country\": \"CR\",\r\n    \"IdBankAccount\": 108,\r\n    \"Key\": \"207320217\",\r\n\t\"ClientRequestId\": \"110000000254-LOG-ANTIT\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{urlCreditFlow}}GetBankById",
+													"host": [
+														"{{urlCreditFlow}}GetBankById"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "Vary",
+													"value": "Accept-Encoding"
+												},
+												{
+													"key": "Server",
+													"value": "Microsoft-IIS/10.0"
+												},
+												{
+													"key": "Set-Cookie",
+													"value": "TiPMix=87.863674614515; path=/; HttpOnly; Domain=publico-uatbuspei.ase-privado-comercios.appserviceenvironment.net; Max-Age=3600; Secure"
+												},
+												{
+													"key": "Set-Cookie",
+													"value": "x-ms-routing-name=self; path=/; HttpOnly; Domain=publico-uatbuspei.ase-privado-comercios.appserviceenvironment.net; Max-Age=3600; Secure"
+												},
+												{
+													"key": "Request-Context",
+													"value": "appId=cid-v1:6bd6633d-c326-425d-b4c8-cfd21a119657"
+												},
+												{
+													"key": "X-Powered-By",
+													"value": "ASP.NET"
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 16 Sep 2021 15:15:02 GMT"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"Result\": {\n        \"Status\": 1,\n        \"Origin\": 1,\n        \"Verified\": 1,\n        \"DescriptionOrigin\": \"Cuenta IBAN\",\n        \"BankAccount\": \"CR77080304001000997321\",\n        \"Description\": \"Dolares\",\n        \"Currency\": \"Dolares\",\n        \"Default\": true,\n        \"Bank\": \"Grupo Mutual Alajuela - La Vivienda\",\n        \"ClientRequestId\": \"110000000254-LOG-ANTIT\"\n    },\n    \"_HaveError\": false,\n    \"_ErrorMessage\": null,\n    \"_FullError\": null\n}"
+										}
+									]
 								}
 							]
 						},
